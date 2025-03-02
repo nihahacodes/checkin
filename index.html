@@ -3,4 +3,98 @@
    <title> check-in </title> 
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display:flex;
+            justify-content:centre;
+            align-items:centre;
+            height:100vh;
+            margin:0;
+            font-family: 'Arial ',sans-serif;
+            text-align: centre;
+            background-color:#ffd0f1  ;
+            color:#741661 ;
+            padding:50px;}
+            .container{
+                display: flex;
+                justify-content:space-between;
+                align-items:centre;
+                gap:20px;
+                padding: 20px;
+                
+            }
+            .image-container img {
+                width:45%;
+                padding:20px;
+                align-items: centre;
+                
+                border-radius:10px;
+
+            }
+            .button-container{
+                text-align:centre;
+                padding:15px;
+                border:2px;
+                border-radius:10px;
+            }
+         
+         button{
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px; ;
+         }
+         button:hover {
+            background-color: #ff1493;
+        }
+
+
+
+
+        
+        
+        
+    </style>
+
+    <body>
+        <div class="container">
+            
+            <h1> heyy !   </h1>
+            <h1> DID YOU HAVE A GOOD DAY? </h1>
+            
+        </div>
+        <div class="image-container"> <img src="heart.jpg" width="50%"></div>
+        <div class="button-container">
+            <button onclick="showyesmessage()">YES !</button>
+            <button onclick="shownomessage()">NO </button>
+           
+            
+            <p id="yessmessage" style="display:none; margin-top:35px; font-size: 20px; 
+                text-align: center; 
+                position: absolute; 
+                 top: 50%; 
+                left: 50%; 
+                transform: translate(-50%, -50%);">
+           </div>
+        <script>
+            function showyesmessage(){
+                document.getElementById("yessmessage").style.display="block";
+                document.getElementById("yessmessage").innerHTML ="good job <3 im proud of you ";
+            }
+            function shownomessage(){
+                window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+            
+            
+            }
+        </script>
+    </body>
+
+
+
+
+
 </head>
